@@ -24,7 +24,9 @@ export class AppComponent implements DoCheck, AfterViewInit {
   // Holds change detection references to our dynamically loaded components.
   detectors: ChangeDetectorRef[] = [];
 
-  // An array which holds the components selector, and the component itself.
+  // An array which holds the component selectors, and the maching
+  // component itself. You will need to add new selectors and components you
+  // wish to dynamically load at runtime.
   availableSelectors: any = [
       ['helloworld', HelloWorldComponent],
     ];
@@ -43,6 +45,9 @@ export class AppComponent implements DoCheck, AfterViewInit {
 
   ngAfterViewInit() {
     console.log( "App view initialized" );
+
+    // This is where we will want to automatically initialize components...
+    this.initializeComponents();
   }
 
   /**
