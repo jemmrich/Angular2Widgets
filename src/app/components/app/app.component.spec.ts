@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 
+// Components
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {

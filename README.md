@@ -1,29 +1,19 @@
 # Angular2Widgets
-A method of developing Angular2 widgets and using them throughout html pages without having them inside an Angular2 root component.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+## Purpose
+This is a proof-of-concept project that loads a single instance of Angular2, while allowing you to build and render Angular2 components and place them outside of the Angular2 application root, ultimately allowing you to create Angular2 widgets available to static multipage or single page web pages.
 
-## Development server
+The use case for a solution like this is for allowing developers to add Angular2 components to a Wordpress or similar site, much like a widget or series of widgets that are still capable of sharing services and communicating with each other.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project uses Angular Cli. 
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Install
+```
+npm install
+ng serve
+```
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+ng build
+```
